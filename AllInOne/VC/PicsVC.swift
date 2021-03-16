@@ -19,7 +19,7 @@ import DLRadioButton
 
 @available(iOS 11.0, *)
 
-class PicsVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIPickerViewDelegate,UIPickerViewDataSource,NSFetchedResultsControllerDelegate
+class PicsVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIPickerViewDelegate,UIPickerViewDataSource,NSFetchedResultsControllerDelegate, UICollectionViewDelegateFlowLayout
 {
     
     @IBOutlet weak var expandView: UIView!
@@ -868,6 +868,12 @@ class PicsVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         
         collectionView1.reloadItems(at: [indexPath])
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionWidth = collectionView.bounds.width
+        return CGSize(width: collectionWidth / 2 - 10, height: collectionWidth / 3 + 80)
+    }
+    
     //MARK:- button action
     
     @IBAction func addPhotosBtn(_ sender: Any)

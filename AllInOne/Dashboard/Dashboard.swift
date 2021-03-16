@@ -627,7 +627,7 @@ class Dashboard: UIViewController,UITableViewDataSource,UITableViewDelegate,Indi
                                       "synced_time":synced_time]
             print(params)
             let manager = Alamofire.SessionManager.default
-            // manager.session.configuration.timeoutIntervalForRequest = 300
+            manager.session.configuration.timeoutIntervalForRequest = 300
             manager.request(url, method: .post, parameters: params as [String : AnyObject])
                 .responseJSON {
                     response in
@@ -1902,10 +1902,12 @@ class Dashboard: UIViewController,UITableViewDataSource,UITableViewDelegate,Indi
         AddIndex = userDefault.value(forKey:"AddIndex") as! Int
         let inspVc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InspectionsVC")as! InspectionsVC
         inspVc.fromWhere = "Newmode"
+        inspVc.modalPresentationStyle = .fullScreen
         self.present(inspVc, animated: false, completion: nil)
         
+       // let vc = main.instantiateViewController(withIdentifier: "ProductDetailsVC") as! ProductDetailsVC
         
-        
+//        self.navigationController?.pushViewController(inspVc, animated: true)
     }
     
     @IBAction func filterButton(_ sender: Any)

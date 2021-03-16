@@ -65,8 +65,12 @@ class LoginVC: UIViewController
     }
     @IBAction func btnForgotPasswordClicked(_ sender: UIButton)
     {
-        let forgotPassVc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ForgotPasswordVC")as! ForgotPasswordVC
-        self.present(forgotPassVc, animated: false, completion: nil)
+//        let forgotPassVc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ForgotPasswordVC")as! ForgotPasswordVC
+//        self.navigationController?.pushViewController(forgotPassVc, animated: true)
+//        forgotPassVc.modalPresentationStyle = .fullScreen
+//        self.present(forgotPassVc, animated: false, completion: nil)
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ForgotPasswordVC") as? ForgotPasswordVC
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -193,6 +197,7 @@ class LoginVC: UIViewController
                             }
                             
                             print("defaults2=",userDefault)
+//                            self.navigationController?.pushViewController(favourite, animated: true)
                             self.present(favourite, animated: false, completion: nil)
                             
                             

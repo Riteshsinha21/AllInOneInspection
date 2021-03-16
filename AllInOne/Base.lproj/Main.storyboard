@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S3x-qB-cQc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +16,7 @@
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginVC" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginVC" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +45,6 @@
                                                         <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                                     </constraint>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
@@ -59,7 +56,6 @@
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEU-TW-yEM" customClass="MDCTextField">
                                                 <rect key="frame" x="25" y="360" width="325" height="50"/>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
@@ -70,7 +66,7 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlB-QC-lVq">
-                                                <rect key="frame" x="179" y="415" width="171" height="40"/>
+                                                <rect key="frame" x="179" y="425" width="171" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Okh-EG-KEK"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="imc-1a-RcW"/>
@@ -122,7 +118,7 @@
                                             <constraint firstItem="aEU-TW-yEM" firstAttribute="height" secondItem="ZFl-dI-Iej" secondAttribute="height" id="haJ-Oh-Pku"/>
                                             <constraint firstItem="Kss-Oe-SVT" firstAttribute="leading" secondItem="tb8-jC-OVA" secondAttribute="leading" id="uEY-oM-tlu"/>
                                             <constraint firstItem="ZFl-dI-Iej" firstAttribute="centerX" secondItem="tb8-jC-OVA" secondAttribute="centerX" id="v1z-jp-fbA"/>
-                                            <constraint firstItem="UlB-QC-lVq" firstAttribute="top" secondItem="aEU-TW-yEM" secondAttribute="bottom" constant="5" id="zck-Td-E0i"/>
+                                            <constraint firstItem="UlB-QC-lVq" firstAttribute="top" secondItem="aEU-TW-yEM" secondAttribute="bottom" constant="15" id="zck-Td-E0i"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -145,6 +141,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ARH-kv-nUr"/>
                     <connections>
                         <outlet property="txtPassword" destination="aEU-TW-yEM" id="fpF-xF-5ZX"/>
                         <outlet property="txtUsername" destination="ZFl-dI-Iej" id="Ldt-ge-R2f"/>
@@ -152,12 +149,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+            <point key="canvasLocation" x="1056.8" y="118.29085457271366"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="181-ls-22K">
             <objects>
-                <viewController storyboardIdentifier="Dashboard" id="S8G-Dv-1fz" customClass="Dashboard" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Dashboard" id="S8G-Dv-1fz" customClass="Dashboard" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s0a-Q3-eTx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,7 +216,6 @@
                                         <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                                     </constraint>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -246,7 +242,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <button key="tableFooterView" opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mA0-dl-9bR">
-                                    <rect key="frame" x="0.0" y="177" width="375" height="674"/>
+                                    <rect key="frame" x="0.0" y="205" width="375" height="674"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <connections>
@@ -254,15 +250,15 @@
                                     </connections>
                                 </button>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DashboardCell" rowHeight="149" id="Yki-Lx-OaS" customClass="DashboardCell" customModule="AllInOne" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DashboardCell" rowHeight="149" id="Yki-Lx-OaS" customClass="DashboardCell" customModule="AllInOne_Live" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="149"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yki-Lx-OaS" id="zZf-l8-sPU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="148.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Y6-li-L5G">
-                                                    <rect key="frame" x="10" y="5" width="355" height="138.5"/>
+                                                    <rect key="frame" x="10" y="5" width="355" height="139"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Augustus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8du-Nk-P93">
                                                             <rect key="frame" x="8" y="8" width="76.5" height="21"/>
@@ -292,21 +288,21 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calender" translatesAutoresizingMaskIntoConstraints="NO" id="FbS-f9-KuR">
-                                                            <rect key="frame" x="9" y="110.5" width="20" height="20"/>
+                                                            <rect key="frame" x="9" y="111" width="20" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="20" id="mnh-iM-laP"/>
                                                                 <constraint firstAttribute="height" constant="20" id="mqj-HD-0QN"/>
                                                             </constraints>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="9jw-1y-TrG">
-                                                            <rect key="frame" x="184" y="111" width="20" height="20"/>
+                                                            <rect key="frame" x="184" y="111.5" width="20" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="20" id="3s9-3R-IZV"/>
                                                                 <constraint firstAttribute="height" constant="20" id="b18-Ox-he1"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aug 20,2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baV-BZ-OQu">
-                                                            <rect key="frame" x="37" y="110.5" width="141" height="21"/>
+                                                            <rect key="frame" x="37" y="111" width="141" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="Q3G-ds-vQN"/>
                                                             </constraints>
@@ -315,7 +311,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sara D. Cole" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjh-5F-Wat">
-                                                            <rect key="frame" x="213" y="110.5" width="139" height="21"/>
+                                                            <rect key="frame" x="213" y="111" width="139" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="fro-xM-14l"/>
                                                             </constraints>
@@ -324,7 +320,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGM-wr-RyV">
-                                                            <rect key="frame" x="177" y="116.5" width="1" height="10"/>
+                                                            <rect key="frame" x="177" y="117" width="1" height="10"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="SCR-r6-lWY"/>
@@ -480,33 +476,33 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Br9-lf-eo4">
-                                <rect key="frame" x="375" y="0.0" width="0.0" height="667"/>
+                                <rect key="frame" x="375" y="-10" width="0.0" height="667"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vul-ku-abP">
                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="667"/>
                                         <color key="backgroundColor" red="0.23529411759999999" green="0.47058823529999999" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="120" id="DaR-v2-fes" customClass="TableViewCellMenu" customModule="AllInOne" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="120" id="DaR-v2-fes" customClass="TableViewCellMenu" customModule="AllInOne_Live" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="0.0" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DaR-v2-fes" id="hxz-FI-Spc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="119.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="120"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="STO-CA-AcR">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="STO-CA-AcR">
                                                             <rect key="frame" x="8" y="47.5" width="25" height="25"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="25" id="Srt-jH-csB"/>
                                                                 <constraint firstAttribute="width" constant="25" id="hEr-FM-Rh6"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ET-qb-804">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ET-qb-804">
                                                             <rect key="frame" x="48" y="49" width="48" height="21.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lz8-pc-0mK">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lz8-pc-0mK">
                                                             <rect key="frame" x="5" y="118.5" width="0.0" height="1"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
@@ -538,7 +534,7 @@
                                                 <rect key="frame" x="0.0" y="148" width="0.0" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BNo-bJ-TRs" id="DpI-MV-kiz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
@@ -580,7 +576,7 @@
                             <constraint firstItem="AMz-gT-6b8" firstAttribute="trailing" secondItem="pr3-HK-2zB" secondAttribute="trailing" constant="-5" id="fyT-aQ-7nG"/>
                             <constraint firstItem="Br9-lf-eo4" firstAttribute="trailing" secondItem="sYy-sg-MHl" secondAttribute="trailing" id="g9J-0N-JoX"/>
                             <constraint firstItem="4Af-qG-qh6" firstAttribute="trailing" secondItem="sYy-sg-MHl" secondAttribute="trailing" id="h7B-Ms-M1I"/>
-                            <constraint firstItem="5sd-y7-EIX" firstAttribute="top" secondItem="s0a-Q3-eTx" secondAttribute="top" id="mc8-xK-xMF"/>
+                            <constraint firstItem="5sd-y7-EIX" firstAttribute="top" secondItem="sYy-sg-MHl" secondAttribute="top" id="mc8-xK-xMF"/>
                             <constraint firstItem="7v1-Mj-CKQ" firstAttribute="leading" secondItem="sYy-sg-MHl" secondAttribute="leading" id="nWZ-C6-NNX"/>
                             <constraint firstItem="aiQ-U3-kps" firstAttribute="centerY" secondItem="ue7-yu-kMi" secondAttribute="centerY" id="o7r-za-m1L"/>
                             <constraint firstItem="Br9-lf-eo4" firstAttribute="height" secondItem="s0a-Q3-eTx" secondAttribute="height" id="oJy-hp-BPc"/>
@@ -604,25 +600,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1n-of-0Sc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013.6" y="108.39580209895054"/>
+            <point key="canvasLocation" x="2647.1999999999998" y="106.59670164917542"/>
         </scene>
         <!--Item-->
         <scene sceneID="jsR-HR-g1U">
             <objects>
-                <viewController id="JLH-9k-8HT" customClass="NewInspectionViewController" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JLH-9k-8HT" customClass="NewInspectionViewController" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nL3-jU-lqf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gEv-aA-2P9">
-                                <rect key="frame" x="0.0" y="361" width="375" height="629"/>
+                                <rect key="frame" x="0.0" y="351" width="375" height="629"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="661" id="A7E-m3-48B" customClass="tblViewCell" customModule="AllInOne" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="661" id="A7E-m3-48B" customClass="tblViewCell" customModule="AllInOne_Live" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="661"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A7E-m3-48B" id="oHd-I2-mo9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="660.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="661"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MyS-50-d5d">
@@ -677,7 +673,7 @@
         <!--InspectionsVC-->
         <scene sceneID="lhZ-Oa-zfW">
             <objects>
-                <viewController storyboardIdentifier="InspectionsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QyS-Sy-6J6" customClass="InspectionsVC" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InspectionsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QyS-Sy-6J6" customClass="InspectionsVC" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gZW-YG-zn6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -802,18 +798,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8E-cu-TYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3568.8000000000002" y="86.806596701649184"/>
+            <point key="canvasLocation" x="4508" y="86.806596701649184"/>
         </scene>
         <!--PicsVC-->
         <scene sceneID="wDx-9S-dPH">
             <objects>
-                <viewController storyboardIdentifier="secondView" id="O3k-L1-cf2" customClass="PicsVC" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondView" id="O3k-L1-cf2" customClass="PicsVC" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mJm-l2-RfZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="V0R-BO-HYm">
-                                <rect key="frame" x="0.0" y="20" width="375" height="587"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8TX-k8-9jS">
                                     <size key="itemSize" width="85" height="85"/>
@@ -822,7 +818,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pics" id="uwu-gE-1YK" customClass="CollectionViewCellPics" customModule="AllInOne" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pics" id="uwu-gE-1YK" customClass="CollectionViewCellPics" customModule="AllInOne_Live" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -941,14 +937,14 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVu-4O-2Um">
-                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="hideBtnActn:" destination="O3k-L1-cf2" eventType="touchUpInside" id="e0F-CN-Z2s"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGd-cE-UBH">
-                                <rect key="frame" x="50" y="128.5" width="275" height="330"/>
+                                <rect key="frame" x="50" y="118.5" width="275" height="330"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJI-s3-xK2" customClass="DLRadioButton">
                                         <rect key="frame" x="10" y="12" width="255" height="35"/>
@@ -1027,7 +1023,7 @@
                                         </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdP-B5-0wA">
-                                        <rect key="frame" x="241" y="194.5" width="14" height="30"/>
+                                        <rect key="frame" x="243" y="194.5" width="12" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="nXN-Tq-iG0"/>
                                         </constraints>
@@ -1051,7 +1047,7 @@
                                         </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NW5-le-ggB">
-                                        <rect key="frame" x="241" y="242" width="14" height="30"/>
+                                        <rect key="frame" x="243" y="242" width="12" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="m4J-pU-Kye"/>
                                         </constraints>
@@ -1295,12 +1291,12 @@
                     <viewLayoutGuide key="safeArea" id="A3a-8c-RPF"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="4365.6000000000004" y="54.422788605697157"/>
+            <point key="canvasLocation" x="5304.8000000000002" y="54.422788605697157"/>
         </scene>
         <!--AdditionaltabVC-->
         <scene sceneID="XMI-r6-2Xn">
             <objects>
-                <viewController storyboardIdentifier="AdditionaltabVC" id="6pL-Tx-dn8" customClass="AdditionaltabVC" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdditionaltabVC" id="6pL-Tx-dn8" customClass="AdditionaltabVC" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RZl-uL-Kvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1361,7 +1357,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pics" id="OjZ-e4-8NK" customClass="CollectionViewCellPics" customModule="AllInOne" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pics" id="OjZ-e4-8NK" customClass="CollectionViewCellPics" customModule="AllInOne_Live" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -1469,17 +1465,17 @@
                     <viewLayoutGuide key="safeArea" id="cx2-sd-YmV"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="5088.8000000000002" y="53.523238380809602"/>
+            <point key="canvasLocation" x="6028" y="53.523238380809602"/>
         </scene>
         <!--Forgot PasswordVC-->
         <scene sceneID="uw4-wR-wfQ">
             <objects>
-                <viewController storyboardIdentifier="ForgotPasswordVC" id="fki-DE-ngn" customClass="ForgotPasswordVC" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotPasswordVC" id="fki-DE-ngn" customClass="ForgotPasswordVC" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6wj-a1-12X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izh-k2-EBd">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izh-k2-EBd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeZ-F8-4Zp">
@@ -1544,7 +1540,6 @@
                                                         <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                                     </constraint>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1618,18 +1613,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cy4-vB-6o3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="MOS-m8-fon"/>
                     <connections>
                         <outlet property="txtUsername" destination="UEY-f6-UhJ" id="cl4-4h-U4u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hnl-cO-mZc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1765.5999999999999" y="107.49625187406298"/>
+            <point key="canvasLocation" x="1791.2" y="131.78410794602701"/>
         </scene>
         <!--InfoVC-->
         <scene sceneID="4pL-OJ-MwQ">
             <objects>
-                <viewController storyboardIdentifier="firstView" id="c5u-dc-Zlb" customClass="InfoVC" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firstView" id="c5u-dc-Zlb" customClass="InfoVC" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jdy-Xb-CfH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1645,11 +1641,11 @@
                                         <rect key="frame" x="15" y="119" width="345" height="1815"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpandableCell" rowHeight="1250" id="avL-Gy-bdB" customClass="ExpandableCell" customModule="AllInOne" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpandableCell" rowHeight="1250" id="avL-Gy-bdB" customClass="ExpandableCell" customModule="AllInOne_Live" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="345" height="1250"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="avL-Gy-bdB" id="0VK-5L-fE1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="1249.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="1250"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gER-4f-cBa">
@@ -2183,15 +2179,15 @@
                                                             <rect key="frame" x="8.5" y="86" width="328" height="1123"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <prototypes>
-                                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InsideRealtorsTableViewCell" rowHeight="199" id="hej-4R-CAU" customClass="InsideRealtorsTableViewCell" customModule="AllInOne" customModuleProvider="target">
+                                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InsideRealtorsTableViewCell" rowHeight="199" id="hej-4R-CAU" customClass="InsideRealtorsTableViewCell" customModule="AllInOne_Live" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="28" width="328" height="199"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hej-4R-CAU" id="7dh-Kh-V0p">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="328" height="198.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="328" height="199"/>
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Panel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nou-Ky-cQR">
-                                                                                <rect key="frame" x="15" y="18" width="298" height="19.5"/>
+                                                                                <rect key="frame" x="15" y="21" width="298" height="19.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <nil key="highlightedColor"/>
@@ -2200,11 +2196,10 @@
                                                                                 </variation>
                                                                             </label>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVv-13-Pik" customClass="MDCTextField">
-                                                                                <rect key="frame" x="15" y="55.5" width="298" height="50"/>
+                                                                                <rect key="frame" x="15" y="58.5" width="298" height="50"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="50" id="9z9-Ep-kXT"/>
                                                                                 </constraints>
-                                                                                <nil key="textColor"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                                 <connections>
@@ -2212,7 +2207,7 @@
                                                                                 </connections>
                                                                             </textField>
                                                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrU-zi-2kZ">
-                                                                                <rect key="frame" x="15" y="42.5" width="298" height="45"/>
+                                                                                <rect key="frame" x="15" y="45.5" width="298" height="45"/>
                                                                                 <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="45" id="LO8-Pb-X3r"/>
@@ -2222,7 +2217,7 @@
                                                                                 </state>
                                                                             </button>
                                                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OpP-iC-0Lt">
-                                                                                <rect key="frame" x="181" y="45.5" width="132" height="127"/>
+                                                                                <rect key="frame" x="181" y="48.5" width="132" height="127"/>
                                                                                 <subviews>
                                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6S-Cb-tJe">
                                                                                         <rect key="frame" x="0.0" y="41" width="132" height="45"/>
@@ -2279,11 +2274,11 @@
                                                                         <outlet property="view1" destination="OpP-iC-0Lt" id="PzF-y6-C9s"/>
                                                                     </connections>
                                                                 </tableViewCell>
-                                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentsTableViewCell" rowHeight="100" id="Kmx-GV-fBi" customClass="CommentsTableViewCell" customModule="AllInOne" customModuleProvider="target">
+                                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentsTableViewCell" rowHeight="100" id="Kmx-GV-fBi" customClass="CommentsTableViewCell" customModule="AllInOne_Live" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="227" width="328" height="100"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kmx-GV-fBi" id="VUo-Fd-oag">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="328" height="99.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="328" height="100"/>
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpG-uD-tQO">
@@ -2317,7 +2312,7 @@
                                                                                 </connections>
                                                                             </textView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOp-fA-fMe">
-                                                                                <rect key="frame" x="10" y="93.5" width="308" height="1"/>
+                                                                                <rect key="frame" x="10" y="94" width="308" height="1"/>
                                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="1" id="ZNk-OK-MDJ"/>
@@ -2394,7 +2389,7 @@
                                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                             </collectionViewFlowLayout>
                                                             <cells>
-                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pics" id="Ujr-vd-dAA" customClass="CollectionViewCellPics" customModule="AllInOne" customModuleProvider="target">
+                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pics" id="Ujr-vd-dAA" customClass="CollectionViewCellPics" customModule="AllInOne_Live" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -2414,7 +2409,7 @@
                                                                                 </constraints>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqb-nG-zNw">
-                                                                                <rect key="frame" x="18" y="200" width="166" height="0.0"/>
+                                                                                <rect key="frame" x="10" y="192" width="182" height="0.0"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <nil key="textColor"/>
@@ -2577,7 +2572,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="info" id="Dno-xd-Tmd" customClass="CollectionViewCellInfo" customModule="AllInOne" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="info" id="Dno-xd-Tmd" customClass="CollectionViewCellInfo" customModule="AllInOne_Live" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="6.5" width="150" height="66"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -2718,7 +2713,7 @@
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                             <cells>
-                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pics" id="nxR-uF-CcC" customClass="CollectionViewCellPics" customModule="AllInOne" customModuleProvider="target">
+                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pics" id="nxR-uF-CcC" customClass="CollectionViewCellPics" customModule="AllInOne_Live" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="83" height="88"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -2795,7 +2790,7 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                     <cells>
-                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pics" id="nX0-EU-g2d" customClass="CollectionViewCellPics" customModule="AllInOne" customModuleProvider="target">
+                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pics" id="nX0-EU-g2d" customClass="CollectionViewCellPics" customModule="AllInOne_Live" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="83" height="88"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -2855,7 +2850,7 @@
         <!--Update View Controller-->
         <scene sceneID="BWa-v7-rhg">
             <objects>
-                <viewController storyboardIdentifier="UpdateViewController" id="TIt-lt-vVw" customClass="UpdateViewController" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UpdateViewController" id="TIt-lt-vVw" customClass="UpdateViewController" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UfQ-jC-fcV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2915,7 +2910,6 @@
                                                         <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                                     </constraint>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -2962,7 +2956,6 @@
                                                         <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                                     </constraint>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -3040,12 +3033,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mhm-gZ-RuE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2464.8000000000002" y="107.49625187406298"/>
+            <point key="canvasLocation" x="3404" y="107.49625187406298"/>
         </scene>
         <!--Change PasswordVC-->
         <scene sceneID="Irb-8w-ZjB">
             <objects>
-                <viewController storyboardIdentifier="ChangePasswordVC" id="bKv-B6-o72" customClass="ChangePasswordVC" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChangePasswordVC" id="bKv-B6-o72" customClass="ChangePasswordVC" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KiJ-zJ-yJ3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3115,7 +3108,6 @@
                                                         <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                                     </constraint>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
@@ -3137,7 +3129,6 @@
                                                         <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                                     </constraint>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
@@ -3148,7 +3139,6 @@
                                                         <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                                     </constraint>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
@@ -3226,10 +3216,10 @@
             </objects>
             <point key="canvasLocation" x="1766" y="779"/>
         </scene>
-        <!--Data Source-->
+        <!--InspectVC-->
         <scene sceneID="3aO-Xk-lbu">
             <objects>
-                <viewController storyboardIdentifier="thirdView" id="pNv-8C-M6X" customClass="InspectVC" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="thirdView" id="pNv-8C-M6X" customClass="InspectVC" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XIq-yr-Gfl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3244,15 +3234,15 @@
                                                 <rect key="frame" x="15" y="20" width="345" height="1980"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpandableCellInspect1" rowHeight="890" id="xoM-WG-SvH" customClass="ExpandableCellInspect1" customModule="AllInOne" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpandableCellInspect1" rowHeight="890" id="xoM-WG-SvH" customClass="ExpandableCellInspect1" customModule="AllInOne_Live" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="345" height="890"/>
                                                         <autoresizingMask key="autoresizingMask"/>
-                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="xoM-WG-SvH" id="vyQ-LA-Pu9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="889.5"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xoM-WG-SvH" id="vyQ-LA-Pu9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="890"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCH-Ax-uC5">
-                                                                    <rect key="frame" x="15" y="41" width="315" height="50"/>
+                                                                    <rect key="frame" x="15" y="21" width="315" height="50"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="50" id="olE-EL-8qz">
@@ -3262,7 +3252,7 @@
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="highlightedColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </label>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f92-QA-tYi">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f92-QA-tYi">
                                                                     <rect key="frame" x="15" y="79" width="315" height="800"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
@@ -3270,11 +3260,10 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2k-QI-5fh">
-                                                                    <rect key="frame" x="15" y="99" width="315" height="800"/>
+                                                                    <rect key="frame" x="15" y="79" width="315" height="800"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUV-Rj-S2H" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="360" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3289,7 +3278,6 @@
                                                                         </button>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address Line 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVC-bf-ttU" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="230" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3297,8 +3285,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lbc-PF-552" customClass="MDCTextField">
-                                                                            <rect key="frame" x="10" y="430" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="10" y="430" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3306,8 +3293,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aIx-3Z-fGd" customClass="MDCTextField">
-                                                                            <rect key="frame" x="10" y="440" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="10" y="444" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3315,8 +3301,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address Line 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ygz-xL-Iru" customClass="MDCTextField">
-                                                                            <rect key="frame" x="10" y="300" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="10" y="300" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3330,7 +3315,6 @@
                                                                                     <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                                                                                 </constraint>
                                                                             </constraints>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                                                             <connections>
@@ -3339,7 +3323,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvV-uJ-aBK" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="90" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3348,7 +3331,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1b4-UR-ZEi" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="160" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                                                             <connections>
@@ -3356,8 +3338,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="County" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aGl-cC-tfP" customClass="MDCTextField">
-                                                                            <rect key="frame" x="10" y="450" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="10" y="458" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3365,8 +3346,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jqM-7y-Qjz" customClass="MDCTextField">
-                                                                            <rect key="frame" x="10" y="460" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="10" y="472" width="295" height="50"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3428,7 +3408,6 @@
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buyer Agent Office" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lzb-qA-eBR" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="290" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3437,7 +3416,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buyer Agent Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePf-UL-ahP" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="80" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3445,8 +3423,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Listing Agent Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LUK-kH-q9O" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="575" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="8" y="575" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3455,7 +3432,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Listing Agent First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z9g-uG-p0J" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="365" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3464,7 +3440,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buyer Agent Phone No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tkp-wp-j4Y" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="150" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                                                             <connections>
@@ -3478,7 +3453,6 @@
                                                                                     <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                                                                                 </constraint>
                                                                             </constraints>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3487,7 +3461,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buyer Agent Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CX3-Dv-beu" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="220" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3496,7 +3469,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Listing Agent Office" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MbW-rj-m0O" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="505" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3504,8 +3476,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Listing Agent Phone No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uad-hP-uer" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="590" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="8" y="594" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                                                             <connections>
@@ -3514,7 +3485,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Listing Agent Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wTf-GG-cmE" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="435" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3565,7 +3535,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLW-3n-229">
-                                                                    <rect key="frame" x="15" y="99" width="315" height="800"/>
+                                                                    <rect key="frame" x="15" y="79" width="315" height="800"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Invoice No.*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iEp-Cs-efR" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="0.0" width="295" height="50"/>
@@ -3574,7 +3544,6 @@
                                                                                     <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                                                                                 </constraint>
                                                                             </constraints>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3583,7 +3552,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inspection Fee" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G8P-CF-Wk9" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="70" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                             <connections>
@@ -3592,7 +3560,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Additional Inspection Fee" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IOS-EV-vZS" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="140" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                             <connections>
@@ -3601,7 +3568,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Has Payment been made" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFx-5E-x31" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="210" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3610,7 +3576,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Payment Method" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Dc-0i-119" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="280" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3619,7 +3584,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Received Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvo-wt-cR2" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="350" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                             <connections>
@@ -3655,7 +3619,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qoQ-DY-jhU">
-                                                                    <rect key="frame" x="15" y="99" width="315" height="800"/>
+                                                                    <rect key="frame" x="15" y="79" width="315" height="800"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inspection Address Line 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eTc-GY-ZLD" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="10" width="295" height="50"/>
@@ -3664,7 +3628,6 @@
                                                                                     <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                                                                                 </constraint>
                                                                             </constraints>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3678,7 +3641,6 @@
                                                                                     <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                                                                                 </constraint>
                                                                             </constraints>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3687,7 +3649,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inspection City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iuh-p3-dUK" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="140" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3696,7 +3657,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inspection State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kKR-Jc-o0G" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="210" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3705,7 +3665,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inspection Zip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VHV-aO-GZF" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="280" width="295" height="50"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3713,8 +3672,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inspection County" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSo-ud-a0B" customClass="MDCTextField">
-                                                                            <rect key="frame" x="10" y="350" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="10" y="350" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3726,13 +3684,11 @@
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" id="hiN-xI-TiO"/>
                                                                             </constraints>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Inspection" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Go8-tM-EI7" customClass="MDCTextField">
-                                                                            <rect key="frame" x="10" y="380" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="10" y="384" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3741,8 +3697,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time Of Inspection" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OGi-9h-Rjy" customClass="MDCTextField">
-                                                                            <rect key="frame" x="10" y="410" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="10" y="418" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3750,8 +3705,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inspection Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vA5-S1-MQ0" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="440" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="8" y="452" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3765,32 +3719,30 @@
                                                                             </connections>
                                                                         </button>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQy-ro-DzK">
-                                                                            <rect key="frame" x="10" y="410" width="295" height="30"/>
+                                                                            <rect key="frame" x="10" y="418" width="295" height="34"/>
                                                                             <connections>
                                                                                 <action selector="timeBtnAction:" destination="pNv-8C-M6X" eventType="touchUpInside" id="zAU-Nb-WKM"/>
                                                                             </connections>
                                                                         </button>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock1" translatesAutoresizingMaskIntoConstraints="NO" id="0DJ-g0-yOx">
-                                                                            <rect key="frame" x="270" y="412.5" width="25" height="25"/>
+                                                                            <rect key="frame" x="270" y="422.5" width="25" height="25"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="25" id="onR-Ns-kTK"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                         <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Additional Inspection Fees" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kT5-Nf-Qky" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="470" width="295" height="0.0"/>
+                                                                            <rect key="frame" x="8" y="486" width="295" height="0.0"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" id="fU7-Qa-XzY"/>
                                                                             </constraints>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Additional Inspection" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ty-5o-VVC" userLabel="Type of Additional Inspection Fees" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="470" width="295" height="30"/>
+                                                                            <rect key="frame" x="8" y="486" width="295" height="34"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" id="frc-GK-GhF"/>
                                                                             </constraints>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <variation key="default">
@@ -3803,8 +3755,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year  Build" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lP6-Ml-jTF" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="485" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="8" y="505" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                             <connections>
@@ -3812,8 +3763,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estimated sqft" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uFB-3m-m7H" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="500" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="8" y="524" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                             <connections>
@@ -3821,8 +3771,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of additional inspections" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bic-pG-VRW" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="530" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="8" y="562" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                                                             <connections>
@@ -3830,8 +3779,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of units inspected" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sh7-Om-dgX" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="515" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="8" y="543" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                                             <connections>
@@ -3839,8 +3787,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weather" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igh-2E-b0N" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="545" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="8" y="581" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3848,8 +3795,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Construction Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBq-h5-Gvy" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="560" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="8" y="600" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3857,8 +3803,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Structure" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bw3-g0-Vi9" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="575" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="8" y="619" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3866,8 +3811,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No of Bedrooms" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4GE-M3-VnM" customClass="MDCTextField">
-                                                                            <rect key="frame" x="8" y="590" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="8" y="638" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                                             <connections>
@@ -3875,8 +3819,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No of Bathroom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lk0-kx-BwX" customClass="MDCTextField">
-                                                                            <rect key="frame" x="10" y="605" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="10" y="657" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                                             <connections>
@@ -3884,8 +3827,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No of Garage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CJn-Gx-hB6" customClass="MDCTextField">
-                                                                            <rect key="frame" x="10" y="620" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="10" y="676" width="295" height="34"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                                             <connections>
@@ -3894,7 +3836,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temperature" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QYF-lc-BeX" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="600" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                             <connections>
@@ -3903,7 +3844,6 @@
                                                                         </textField>
                                                                         <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# of stories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T4g-DG-pAt" customClass="MDCTextField">
                                                                             <rect key="frame" x="10" y="640" width="295" height="30"/>
-                                                                            <nil key="textColor"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                                                             <connections>
@@ -3911,13 +3851,13 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8I-nW-uza">
-                                                                            <rect key="frame" x="10" y="380" width="295" height="30"/>
+                                                                            <rect key="frame" x="10" y="384" width="295" height="34"/>
                                                                             <connections>
                                                                                 <action selector="dateBtnAction:" destination="pNv-8C-M6X" eventType="touchUpInside" id="Xpm-FE-kfG"/>
                                                                             </connections>
                                                                         </button>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calender" translatesAutoresizingMaskIntoConstraints="NO" id="T9A-5c-Kou">
-                                                                            <rect key="frame" x="270" y="382.5" width="25" height="25"/>
+                                                                            <rect key="frame" x="270" y="388.5" width="25" height="25"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="25" id="0DV-yS-LpF"/>
                                                                                 <constraint firstAttribute="width" constant="25" id="r8x-4m-CM3"/>
@@ -4055,13 +3995,13 @@
                                                                     </variation>
                                                                 </view>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lF8-qr-HXp">
-                                                                    <rect key="frame" x="25" y="55.5" width="47.5" height="21.5"/>
+                                                                    <rect key="frame" x="25" y="35.5" width="47.5" height="21.5"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFs-ER-ho1">
-                                                                    <rect key="frame" x="281" y="50.5" width="14" height="31.5"/>
+                                                                    <rect key="frame" x="283" y="30.5" width="12" height="31.5"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -4297,9 +4237,6 @@
                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8ct-Is-M5p">
                                                         <rect key="frame" x="0.0" y="56" width="275" height="244"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <date key="date" timeIntervalSinceReferenceDate="565595682.29191995">
-                                                            <!--2018-12-04 05:54:42 +0000-->
-                                                        </date>
                                                         <connections>
                                                             <action selector="datePicker:" destination="pNv-8C-M6X" eventType="valueChanged" id="u6V-Tx-3t1"/>
                                                         </connections>
@@ -4516,7 +4453,7 @@
         <!--Home Inspection Agreement Vc-->
         <scene sceneID="oFD-f2-aTt">
             <objects>
-                <viewController storyboardIdentifier="HomeInspectionAgreementVc" id="Let-Mz-lZL" customClass="HomeInspectionAgreementVc" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeInspectionAgreementVc" id="Let-Mz-lZL" customClass="HomeInspectionAgreementVc" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x6z-7M-XwZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4662,7 +4599,7 @@
         <!--Camera-->
         <scene sceneID="ZHb-o1-LiG">
             <objects>
-                <viewController storyboardIdentifier="ViewController" title="Camera" id="lOE-6i-DXm" customClass="ViewController" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="Camera" id="lOE-6i-DXm" customClass="ViewController" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qM4-nY-wRv"/>
                         <viewControllerLayoutGuide type="bottom" id="j2I-fY-Za9"/>
@@ -4823,7 +4760,7 @@
         <!--Categoies ImageVC-->
         <scene sceneID="jDK-VM-zbh">
             <objects>
-                <viewController storyboardIdentifier="CategoiesImageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v53-Nq-PiQ" customClass="CategoiesImageVC" customModule="AllInOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CategoiesImageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v53-Nq-PiQ" customClass="CategoiesImageVC" customModule="AllInOne_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RZa-Ut-cPZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4897,7 +4834,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pics" id="6Rf-np-S7j" customClass="CollectionViewCellPics" customModule="AllInOne" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pics" id="6Rf-np-S7j" customClass="CollectionViewCellPics" customModule="AllInOne_Live" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="89" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -4998,7 +4935,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUO-x1-F8l">
-                                        <rect key="frame" x="241" y="194.5" width="14" height="30"/>
+                                        <rect key="frame" x="243" y="194.5" width="12" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="zxa-Z1-CJ6"/>
                                         </constraints>
@@ -5013,7 +4950,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nau-3I-R7a">
-                                        <rect key="frame" x="241" y="242" width="14" height="30"/>
+                                        <rect key="frame" x="243" y="242" width="12" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="R4W-Lz-a8M"/>
                                         </constraints>
@@ -5274,7 +5211,25 @@
                     <viewLayoutGuide key="safeArea" id="ybL-oO-jAA"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="5973.6000000000004" y="-23.838080959520241"/>
+            <point key="canvasLocation" x="6912.8000000000002" y="-23.838080959520241"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YIH-V7-vBf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S3x-qB-cQc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TPL-Bk-Spk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IVz-f9-RC0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyh-Wt-IhQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
     <resources>

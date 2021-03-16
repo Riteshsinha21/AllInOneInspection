@@ -147,7 +147,7 @@ class UpdateViewController: UIViewController,UIImagePickerControllerDelegate,UIN
        
     let favourite = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Dashboard")as! Dashboard
     self.present(favourite, animated: false, completion: nil)
-    
+
     
     self.present(alertController, animated: true, completion: nil)
     }

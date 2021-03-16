@@ -26,6 +26,7 @@ class ForgotPasswordVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.isHidden = false
         usernameTextFieldController = MDCTextInputControllerUnderline(textInput: txtUsername)
         usernameTextFieldController.textInputFont = MDCTypography.titleFont()
         usernameTextFieldController.textInputFont = MDCTypography.titleFont()

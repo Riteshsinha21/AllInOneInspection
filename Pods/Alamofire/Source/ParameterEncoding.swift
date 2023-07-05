@@ -1,7 +1,7 @@
 //
 //  ParameterEncoding.swift
 //
-//  Copyright (c) 2014-2018 Alamofire Software Foundation (http://alamofire.org/)
+//  Copyright (c) 2014 Alamofire Software Foundation (http://alamofire.org/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -43,7 +43,7 @@ public enum HTTPMethod: String {
 
 /// A dictionary of parameters to apply to a `URLRequest`.
 public typealias Parameters = [String: Any]
-public typealias Parameters1 = String
+
 /// A type used to define how a set of parameters are applied to a `URLRequest`.
 public protocol ParameterEncoding {
     /// Creates a URL request by encoding parameters and applying them onto an existing request.

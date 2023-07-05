@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="KGk-i7-Jjw" customClass="HomeInspectionListCell" customModule="AllInOneInspections" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="424" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kx-HF-ecc">
+                        <rect key="frame" x="10" y="5" width="404" height="93.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiD-O4-FJn">
+                                <rect key="frame" x="10" y="8" width="314" height="17.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Property Name">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Roboto-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iTW-IA-mWW">
+                                <rect key="frame" x="334" y="4.5" width="60" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="5GC-DP-EQR"/>
+                                    <constraint firstAttribute="width" constant="60" id="JFh-mE-d3C"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Button">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="menu" size="14"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kze-OH-6Z7">
+                                <rect key="frame" x="324" y="34.5" width="70" height="20"/>
+                                <color key="backgroundColor" red="0.4823529412" green="0.41176470590000003" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="5hd-0R-82u"/>
+                                    <constraint firstAttribute="width" constant="70" id="t7o-ql-4Ip"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Map">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="12" name="Roboto-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GEa-Ua-KPe">
+                                <rect key="frame" x="324" y="58.5" width="70" height="20"/>
+                                <color key="backgroundColor" red="0.4823529412" green="0.41176470590000003" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="XwR-bR-QnP"/>
+                                    <constraint firstAttribute="height" constant="20" id="oDj-Mo-lBG"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sync">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="12" name="Roboto-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listing_location" translatesAutoresizingMaskIntoConstraints="NO" id="r9V-r7-nNo">
+                                <rect key="frame" x="10" y="29.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="Eef-t9-ZLi"/>
+                                    <constraint firstAttribute="height" constant="15" id="lLZ-bg-re3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfs-8G-LtQ">
+                                <rect key="frame" x="30" y="30" width="254" height="14"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Roboto-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="skj-NU-ORq">
+                                <rect key="frame" x="10" y="54.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="BeN-29-64C"/>
+                                    <constraint firstAttribute="width" constant="15" id="TtF-4Z-o8H"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJw-9K-bTW">
+                                <rect key="frame" x="30" y="55" width="60" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Xiq-Pa-Fn0"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Roboto-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calender" translatesAutoresizingMaskIntoConstraints="NO" id="YSI-gq-HKJ">
+                                <rect key="frame" x="120" y="54.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="11O-Va-XMw"/>
+                                    <constraint firstAttribute="width" constant="15" id="rY6-H4-o6m"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBM-N6-4be">
+                                <rect key="frame" x="140" y="55" width="29.5" height="14"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Roboto-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iTW-IA-mWW" firstAttribute="centerY" secondItem="EiD-O4-FJn" secondAttribute="centerY" id="5c2-NC-SKa"/>
+                            <constraint firstItem="nfs-8G-LtQ" firstAttribute="leading" secondItem="r9V-r7-nNo" secondAttribute="trailing" constant="5" id="8TW-V3-CZC"/>
+                            <constraint firstAttribute="trailing" secondItem="kze-OH-6Z7" secondAttribute="trailing" constant="10" id="Aus-bc-fdU"/>
+                            <constraint firstItem="GEa-Ua-KPe" firstAttribute="top" secondItem="kze-OH-6Z7" secondAttribute="bottom" constant="4" id="Ecz-kl-CxA"/>
+                            <constraint firstItem="EiD-O4-FJn" firstAttribute="top" secondItem="8Kx-HF-ecc" secondAttribute="top" constant="8" id="HOb-Mo-Lyu"/>
+                            <constraint firstItem="skj-NU-ORq" firstAttribute="leading" secondItem="8Kx-HF-ecc" secondAttribute="leading" constant="10" id="IGb-i6-1sg"/>
+                            <constraint firstItem="kze-OH-6Z7" firstAttribute="leading" secondItem="nfs-8G-LtQ" secondAttribute="trailing" constant="40" id="KER-xJ-NCp"/>
+                            <constraint firstItem="nfs-8G-LtQ" firstAttribute="centerY" secondItem="r9V-r7-nNo" secondAttribute="centerY" id="OZ4-6K-fFS"/>
+                            <constraint firstAttribute="trailing" secondItem="GEa-Ua-KPe" secondAttribute="trailing" constant="10" id="Ong-Rr-7Ot"/>
+                            <constraint firstItem="GEa-Ua-KPe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OBM-N6-4be" secondAttribute="trailing" constant="15" id="Spk-5g-yp6"/>
+                            <constraint firstItem="r9V-r7-nNo" firstAttribute="top" secondItem="EiD-O4-FJn" secondAttribute="bottom" constant="4" id="Xfh-bD-8JS"/>
+                            <constraint firstItem="r9V-r7-nNo" firstAttribute="leading" secondItem="8Kx-HF-ecc" secondAttribute="leading" constant="10" id="aNe-wH-2NI"/>
+                            <constraint firstItem="skj-NU-ORq" firstAttribute="top" secondItem="r9V-r7-nNo" secondAttribute="bottom" constant="10" id="cE0-92-17R"/>
+                            <constraint firstItem="yJw-9K-bTW" firstAttribute="leading" secondItem="skj-NU-ORq" secondAttribute="trailing" constant="5" id="dpg-T8-BoT"/>
+                            <constraint firstItem="EiD-O4-FJn" firstAttribute="leading" secondItem="8Kx-HF-ecc" secondAttribute="leading" constant="10" id="fIb-0p-69G"/>
+                            <constraint firstItem="OBM-N6-4be" firstAttribute="leading" secondItem="YSI-gq-HKJ" secondAttribute="trailing" constant="5" id="gek-R4-hs7"/>
+                            <constraint firstAttribute="bottom" secondItem="skj-NU-ORq" secondAttribute="bottom" constant="15" id="gyo-Xh-gYM"/>
+                            <constraint firstItem="yJw-9K-bTW" firstAttribute="centerY" secondItem="skj-NU-ORq" secondAttribute="centerY" id="h60-nb-W06"/>
+                            <constraint firstAttribute="trailing" secondItem="iTW-IA-mWW" secondAttribute="trailing" constant="10" id="idU-aP-BJd"/>
+                            <constraint firstItem="OBM-N6-4be" firstAttribute="centerY" secondItem="YSI-gq-HKJ" secondAttribute="centerY" id="pot-te-Wyg"/>
+                            <constraint firstItem="iTW-IA-mWW" firstAttribute="leading" secondItem="EiD-O4-FJn" secondAttribute="trailing" constant="10" id="qa7-zt-rdT"/>
+                            <constraint firstAttribute="bottom" secondItem="GEa-Ua-KPe" secondAttribute="bottom" constant="15" id="scp-zE-Tu5"/>
+                            <constraint firstItem="YSI-gq-HKJ" firstAttribute="centerY" secondItem="yJw-9K-bTW" secondAttribute="centerY" id="wyf-gj-nUk"/>
+                            <constraint firstItem="kze-OH-6Z7" firstAttribute="top" secondItem="iTW-IA-mWW" secondAttribute="bottom" constant="5" id="wzy-c8-JQQ"/>
+                            <constraint firstItem="YSI-gq-HKJ" firstAttribute="leading" secondItem="yJw-9K-bTW" secondAttribute="trailing" constant="30" id="yWG-sb-mKm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.shadowOpacity" value="0.3"/>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.shadowRadius" value="4.0"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8Kx-HF-ecc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="EA5-lW-iVL"/>
+                    <constraint firstItem="8Kx-HF-ecc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="s9c-TW-gbb"/>
+                    <constraint firstAttribute="trailing" secondItem="8Kx-HF-ecc" secondAttribute="trailing" constant="10" id="vQs-5g-EKx"/>
+                    <constraint firstAttribute="bottom" secondItem="8Kx-HF-ecc" secondAttribute="bottom" constant="5" id="y6Q-Zn-TEd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellAgreementBtn" destination="iTW-IA-mWW" id="3dy-EU-JHo"/>
+                <outlet property="cellDateLbl" destination="OBM-N6-4be" id="Rqb-FJ-c67"/>
+                <outlet property="cellLocationLbl" destination="nfs-8G-LtQ" id="Ezi-Cd-Kjn"/>
+                <outlet property="cellMapBtn" destination="kze-OH-6Z7" id="mT4-a1-A5j"/>
+                <outlet property="cellPropertyName" destination="EiD-O4-FJn" id="b7Z-kD-CAG"/>
+                <outlet property="cellSyncBtn" destination="GEa-Ua-KPe" id="nKK-dy-XaU"/>
+                <outlet property="cellTimeLbl" destination="yJw-9K-bTW" id="seF-96-Ahw"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="108.14732142857143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calender" width="10" height="11.5"/>
+        <image name="listing_location" width="8" height="12"/>
+        <image name="time" width="10" height="10"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

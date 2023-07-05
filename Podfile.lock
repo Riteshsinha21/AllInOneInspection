@@ -1,169 +1,46 @@
 PODS:
-  - Alamofire (4.7.3)
-  - AlamofireImage (3.4.1):
-    - Alamofire (~> 4.7)
-  - BSGridCollectionViewLayout (1.2.2)
-  - BSImagePicker (2.9.0):
-    - BSGridCollectionViewLayout (= 1.2.2)
-    - BSImageView (= 1.0.2)
-  - BSImageView (1.0.2)
-  - Crashlytics (3.11.1):
-    - Fabric (~> 1.8.1)
-  - EPSignature (1.0.6)
-  - Fabric (1.8.2)
-  - FSCalendar (2.8.0)
-  - ImagePicker (3.1.0)
-  - InputMask (4.0.2)
-  - MaterialComponents/AnimationTiming (67.0.0)
-  - MaterialComponents/AppBar (67.0.0):
-    - MaterialComponents/FlexibleHeader
-    - MaterialComponents/HeaderStackView
-    - MaterialComponents/NavigationBar
-    - MaterialComponents/private/Application
-    - MaterialComponents/private/Icons/ic_arrow_back
-    - MaterialComponents/private/UIMetrics
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/Typography
-    - MDFInternationalization
-  - MaterialComponents/ButtonBar (67.0.0):
-    - MaterialComponents/Buttons
-    - MaterialComponents/private/Application
-    - MDFInternationalization
-  - MaterialComponents/Buttons (67.0.0):
-    - MaterialComponents/Ink
-    - MaterialComponents/private/Math
-    - MaterialComponents/private/Shapes
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/Typography
-    - MDFInternationalization
-    - MDFTextAccessibility
-  - MaterialComponents/FlexibleHeader (67.0.0):
-    - MaterialComponents/private/Application
-    - MaterialComponents/private/UIMetrics
-    - MDFTextAccessibility
-  - MaterialComponents/HeaderStackView (67.0.0)
-  - MaterialComponents/Ink (67.0.0):
-    - MaterialComponents/private/Math
-  - MaterialComponents/List (67.0.0):
-    - MaterialComponents/Ink
-    - MaterialComponents/private/Math
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/Typography
-    - MDFInternationalization
-  - MaterialComponents/NavigationBar (67.0.0):
-    - MaterialComponents/ButtonBar
-    - MaterialComponents/private/Math
-    - MaterialComponents/Typography
-    - MDFInternationalization
-    - MDFTextAccessibility
-  - MaterialComponents/Palettes (67.0.0)
-  - MaterialComponents/private/Application (67.0.0)
-  - MaterialComponents/private/Icons/Base (67.0.0)
-  - MaterialComponents/private/Icons/ic_arrow_back (67.0.0):
-    - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/Math (67.0.0)
-  - MaterialComponents/private/Shapes (67.0.0):
-    - MaterialComponents/private/Math
-    - MaterialComponents/ShadowLayer
-  - MaterialComponents/private/UIMetrics (67.0.0):
-    - MaterialComponents/private/Application
-  - MaterialComponents/ShadowElevations (67.0.0)
-  - MaterialComponents/ShadowLayer (67.0.0):
-    - MaterialComponents/ShadowElevations
-  - MaterialComponents/Tabs (67.0.0):
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Ink
-    - MaterialComponents/private/Math
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/Typography
-    - MDFInternationalization
-  - MaterialComponents/TextFields (67.0.0):
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Palettes
-    - MaterialComponents/private/Math
-    - MaterialComponents/Typography
-    - MDFInternationalization
-  - MaterialComponents/Typography (67.0.0):
-    - MaterialComponents/private/Application
-    - MaterialComponents/private/Math
-  - MDFInternationalization (1.1.0)
-  - MDFTextAccessibility (1.2.0)
-  - SVProgressHUD (2.2.5)
-  - TPKeyboardAvoiding (1.3.2)
-  - XLPagerTabStrip (5.0.0)
+  - Alamofire (4.9.1)
+  - CropViewController (2.6.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - MBProgressHUD (1.2.0)
+  - ReachabilitySwift (5.0.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - SwiftyJSON (5.0.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
-  - AlamofireImage (~> 3.0)
-  - BSImagePicker
-  - Crashlytics
-  - EPSignature
-  - Fabric
-  - Fabric (~> 1.8.2)
-  - FSCalendar
-  - ImagePicker
-  - InputMask
-  - MaterialComponents/AppBar
-  - MaterialComponents/Buttons
-  - MaterialComponents/List
-  - MaterialComponents/ShadowElevations
-  - MaterialComponents/Tabs
-  - MaterialComponents/TextFields
-  - SVProgressHUD
-  - TPKeyboardAvoiding
-  - XLPagerTabStrip (from `https://github.com/KelvinJin/XLPagerTabStrip`, branch `swift3`)
+  - Alamofire (~> 4.0)
+  - CropViewController
+  - IQKeyboardManagerSwift
+  - MBProgressHUD
+  - ReachabilitySwift
+  - SDWebImage
+  - SwiftyJSON
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
-    - AlamofireImage
-    - BSGridCollectionViewLayout
-    - BSImagePicker
-    - BSImageView
-    - Crashlytics
-    - EPSignature
-    - Fabric
-    - FSCalendar
-    - ImagePicker
-    - InputMask
-    - MaterialComponents
-    - MDFInternationalization
-    - MDFTextAccessibility
-    - SVProgressHUD
-    - TPKeyboardAvoiding
-
-EXTERNAL SOURCES:
-  XLPagerTabStrip:
-    :branch: swift3
-    :git: https://github.com/KelvinJin/XLPagerTabStrip
-
-CHECKOUT OPTIONS:
-  XLPagerTabStrip:
-    :commit: 99e3cbd5e6b99bb6b1fdf25f4af58fe2e38ad308
-    :git: https://github.com/KelvinJin/XLPagerTabStrip
+    - CropViewController
+    - IQKeyboardManagerSwift
+    - MBProgressHUD
+    - ReachabilitySwift
+    - SDWebImage
+    - SwiftyJSON
+    - Toast-Swift
 
 SPEC CHECKSUMS:
-  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
-  BSGridCollectionViewLayout: 3e6f23b3a2b4f0ca9afae09ca01389d1057f7b32
-  BSImagePicker: 553707de1adaad42eac252e0b84d20dbdba83fe9
-  BSImageView: ab22ff8cae61f1ae17a3c9efeeb216af3cf84a09
-  Crashlytics: ca7ab4bc304aa216bdc2e4c1a96389ee77252203
-  EPSignature: 3fa3b520c80717b98019723faa60a41794b03fbc
-  Fabric: d2b22f443ba195d8a7cc204da230977c72733b40
-  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
-  ImagePicker: db1fd7626337b2577c523bef5f499bbbe5a37079
-  InputMask: b9df7a44c044f59485b2d596661e6bd4334bddb4
-  MaterialComponents: ba0b153b1fa427be83aad80b05784b2cfecec847
-  MDFInternationalization: b5b8626628abf026e630e5ebaeee563037712cbb
-  MDFTextAccessibility: 94098925e0853551c5a311ce7c1ecefbe297cdb6
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
-  XLPagerTabStrip: 87b8b705f9a7178e76a063ffaa2d70045944a965
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CropViewController: 7093b39ec3cb508531b22d35773e06cecd7378d8
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: befd27cdcfb3d2e106205ba7d6e4f69d69b3b73b
+PODFILE CHECKSUM: 2849cc91347aafaa4bd2dda909fe0fcfb718491b
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.10.1
